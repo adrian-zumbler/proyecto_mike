@@ -1,0 +1,1 @@
+json.array! @users, :id,:name,:email,:first_last_name,:second_last_name,:birth_date
