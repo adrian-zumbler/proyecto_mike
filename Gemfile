@@ -24,6 +24,8 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 # Devise is a flexible authentication solution for Rails based on Warden. Read more: https://github.com/plataformatec/devise
 gem 'devise'
+# A pure ruby implementation of the RFC 7519 OAuth JSON Web Token (JWT) standard. Read more: https://github.com/jwt/ruby-jwt
+gem 'jwt'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

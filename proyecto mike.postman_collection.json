@@ -1,0 +1,374 @@
+{
+	"id": "31ec94da-633c-d5e4-43b9-91279304d8da",
+	"name": "proyecto mike",
+	"description": "",
+	"order": [
+		"74c436e0-2a0a-492e-5f12-2c23c91e4024",
+		"438c1fb4-840b-cfbe-5956-433508a6db9c",
+		"a570e465-a534-8fca-333c-79202d7959b0",
+		"46f3fcae-dd4d-f298-6708-d83e0945e7c4",
+		"a4dde88d-5fe7-5e9b-75e9-60455fd1b7b5",
+		"698615a3-fe9d-fb84-5789-36cd72599b12",
+		"780428f0-6bbf-3925-0e50-fbe59b89399d",
+		"702df33e-77a8-a54e-b550-446b7ffe519b",
+		"914960bf-72af-e24f-8e3c-76c1d720536f",
+		"a54a0501-d992-3d22-b7b6-5234fd7e8922",
+		"63ed7ef6-089d-87e0-336e-4db2c22807ef",
+		"ee701a6d-7d28-7d91-a71d-416a75cc4b1b"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1528579939738,
+	"owner": "3762381",
+	"public": false,
+	"requests": [
+		{
+			"id": "438c1fb4-840b-cfbe-5956-433508a6db9c",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{host}}/api/users",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1528778238444,
+			"name": "Create User",
+			"description": "",
+			"collectionId": "31ec94da-633c-d5e4-43b9-91279304d8da",
+			"responses": [],
+			"rawModeData": "{\n\t\"user\": {\n\t\t\"username\": \"zumbler\",\n\t    \"name\": \"Adrian\",\n\t    \"first_last_name\": \"Meza\",\n\t    \"second_last_name\": \"Maldonado\",\n\t    \"birth_date\": \"1989-10-25\",\n\t    \"email\": \"adrianm3@outlook.com\",\n\t    \"password\": \"12345678\"\n\t}\n}"
+		},
+		{
+			"id": "46f3fcae-dd4d-f298-6708-d83e0945e7c4",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{host}}/api/users",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1528584614444,
+			"name": "Get All User",
+			"description": "",
+			"collectionId": "31ec94da-633c-d5e4-43b9-91279304d8da",
+			"responses": [],
+			"rawModeData": "{\n\t\"user\": {\n\n\t    \"name\": \"Adrian\",\n\t    \"first_last_name\": \"Meza\",\n\t    \"second_last_name\": \"Maldonado\",\n\t    \"birth_date\": \"1989-10-25\",\n\t    \"email\": \"adrianm1@outlook.com\",\n\t    \"password\": \"12345678\"\n\t}\n}"
+		},
+		{
+			"id": "63ed7ef6-089d-87e0-336e-4db2c22807ef",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{host}}/api/clients/1",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1528581169742,
+			"name": "Update Client",
+			"description": "",
+			"collectionId": "31ec94da-633c-d5e4-43b9-91279304d8da",
+			"responses": [],
+			"rawModeData": "{\n\t\"client\": {\n\t    \"person\": \"Moral\"\n\t}\n}"
+		},
+		{
+			"id": "698615a3-fe9d-fb84-5789-36cd72599b12",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{host}}/api/providers",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1528581677485,
+			"name": "Get All Provider",
+			"description": "",
+			"collectionId": "31ec94da-633c-d5e4-43b9-91279304d8da",
+			"responses": [],
+			"rawModeData": "{\n\t\"provider\": {\n\t    \"person\": \"Fisica\",\n\t    \"name\": \"Adrian\",\n\t    \"first_last_name\": \"Meza\",\n\t    \"second_last_name\": \"Maldonado\",\n\t    \"birth_date\": \"1989-10-25\",\n\t    \"street\": \"Praderas del cerro\",\n\t    \"distrit\": \"Praderas de la silla\",\n\t    \"postal_code\": \"67186\",\n\t    \"state\": \"Nuevo Leon\",\n\t    \"city\": \"Chihuahua\",\n\t    \"rfc\": \"MEMA891025U40\"\n\t}\n}"
+		},
+		{
+			"id": "702df33e-77a8-a54e-b550-446b7ffe519b",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{host}}/api/providers/1",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1528581737718,
+			"name": "Update Provider",
+			"description": "",
+			"collectionId": "31ec94da-633c-d5e4-43b9-91279304d8da",
+			"responses": [],
+			"rawModeData": "{\n\t\"provider\": {\n\t    \"person\": \"Fisica\",\n\t    \"name\": \"Adrian\",\n\t    \"first_last_name\": \"Meza\",\n\t    \"second_last_name\": \"Maldonado\",\n\t    \"birth_date\": \"1989-10-25\",\n\t    \"street\": \"Praderas del cerro\",\n\t    \"distrit\": \"Praderas de la silla\",\n\t    \"postal_code\": \"67186\",\n\t    \"state\": \"Nuevo Leon\",\n\t    \"city\": \"Chihuahua\",\n\t    \"rfc\": \"MEMA891025U40\"\n\t}\n}"
+		},
+		{
+			"id": "74c436e0-2a0a-492e-5f12-2c23c91e4024",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{host}}/api/providers",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1528581657757,
+			"name": "Create Provider",
+			"description": "",
+			"collectionId": "31ec94da-633c-d5e4-43b9-91279304d8da",
+			"responses": [],
+			"rawModeData": "{\n\t\"provider\": {\n\t    \"person\": \"Fisica\",\n\t    \"name\": \"Adrian\",\n\t    \"first_last_name\": \"Meza\",\n\t    \"second_last_name\": \"Maldonado\",\n\t    \"birth_date\": \"1989-10-25\",\n\t    \"street\": \"Praderas del cerro\",\n\t    \"distrit\": \"Praderas de la silla\",\n\t    \"postal_code\": \"67186\",\n\t    \"state\": \"Nuevo Leon\",\n\t    \"city\": \"Chihuahua\",\n\t    \"rfc\": \"MEMA891025U40\"\n\t}\n}"
+		},
+		{
+			"id": "780428f0-6bbf-3925-0e50-fbe59b89399d",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{host}}/api/providers/1",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1528581705294,
+			"name": "Get Provider",
+			"description": "",
+			"collectionId": "31ec94da-633c-d5e4-43b9-91279304d8da",
+			"responses": [],
+			"rawModeData": "{\n\t\"provider\": {\n\t    \"person\": \"Fisica\",\n\t    \"name\": \"Adrian\",\n\t    \"first_last_name\": \"Meza\",\n\t    \"second_last_name\": \"Maldonado\",\n\t    \"birth_date\": \"1989-10-25\",\n\t    \"street\": \"Praderas del cerro\",\n\t    \"distrit\": \"Praderas de la silla\",\n\t    \"postal_code\": \"67186\",\n\t    \"state\": \"Nuevo Leon\",\n\t    \"city\": \"Chihuahua\",\n\t    \"rfc\": \"MEMA891025U40\"\n\t}\n}"
+		},
+		{
+			"id": "914960bf-72af-e24f-8e3c-76c1d720536f",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{host}}/api/clients",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1528580319760,
+			"name": "Create Client",
+			"description": "",
+			"collectionId": "31ec94da-633c-d5e4-43b9-91279304d8da",
+			"responses": [],
+			"rawModeData": "{\n\t\"client\": {\n\t    \"person\": \"Fisica\",\n\t    \"name\": \"Adrian\",\n\t    \"first_last_name\": \"Meza\",\n\t    \"second_last_name\": \"Maldonado\",\n\t    \"birth_date\": \"1989-10-25\",\n\t    \"street\": \"Praderas del cerro\",\n\t    \"distrit\": \"Praderas de la silla\",\n\t    \"postal_code\": \"67186\",\n\t    \"state\": \"Nuevo Leon\",\n\t    \"city\": \"Chihuahua\",\n\t    \"rfc\": \"MEMA891025U40\"\n\t}\n}"
+		},
+		{
+			"id": "a4dde88d-5fe7-5e9b-75e9-60455fd1b7b5",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{host}}/api/users/1",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1528584650701,
+			"name": "Get User",
+			"description": "",
+			"collectionId": "31ec94da-633c-d5e4-43b9-91279304d8da",
+			"responses": [],
+			"rawModeData": "{\n\t\"user\": {\n\n\t    \"name\": \"Adrian\",\n\t    \"first_last_name\": \"Meza\",\n\t    \"second_last_name\": \"Maldonado\",\n\t    \"birth_date\": \"1989-10-25\",\n\t    \"email\": \"adrianm1@outlook.com\",\n\t    \"password\": \"12345678\"\n\t}\n}"
+		},
+		{
+			"id": "a54a0501-d992-3d22-b7b6-5234fd7e8922",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{host}}/api/clients",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1528580549342,
+			"name": "Get All Clients",
+			"description": "",
+			"collectionId": "31ec94da-633c-d5e4-43b9-91279304d8da",
+			"responses": [],
+			"rawModeData": "{\n\t\"client\": {\n\t    \"person\": \"Fisica\",\n\t    \"name\": \"Adrian\",\n\t    \"first_last_name\": \"Meza\",\n\t    \"second_last_name\": \"Maldonado\",\n\t    \"birth_date\": \"1989-10-25\",\n\t    \"street\": \"Praderas del cerro\",\n\t    \"distrit\": \"Praderas de la silla\",\n\t    \"postal_code\": \"67186\",\n\t    \"state\": \"Nuevo Leon\",\n\t    \"city\": \"Chihuahua\",\n\t    \"rfc\": \"MEMA891025U40\"\n\t}\n}"
+		},
+		{
+			"id": "a570e465-a534-8fca-333c-79202d7959b0",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{host}}/api/users/authenticate",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1528779777095,
+			"name": "Authenicate User",
+			"description": "",
+			"collectionId": "31ec94da-633c-d5e4-43b9-91279304d8da",
+			"responses": [],
+			"rawModeData": "{\n\t\"user\": {\n\t\t\"username\": \"zumbler\",\n\t    \"password\": \"12345678\"\n\t}\n}"
+		},
+		{
+			"id": "ee701a6d-7d28-7d91-a71d-416a75cc4b1b",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{host}}/api/clients/1",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1528581374841,
+			"name": "Get Client",
+			"description": "",
+			"collectionId": "31ec94da-633c-d5e4-43b9-91279304d8da",
+			"responses": [],
+			"rawModeData": "{\n\t\"client\": {\n\t    \"person\": \"Moral\"\n\t}\n}"
+		}
+	]
+}
