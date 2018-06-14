@@ -1,5 +1,6 @@
 class Api::ClientsController < ApiController
-
+    
+    before_filter :authenticate_request!
     before_filter :set_client, only:[:show,:update,:destroy]
 
 

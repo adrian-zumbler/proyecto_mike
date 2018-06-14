@@ -1,5 +1,5 @@
 class Api::UsersController < ApiController
-    
+    before_filter :authenticate_request! , except: [:authenticate]
     before_filter :set_user, only:[:show,:update,:destroy]
     before_filter :set_user_by_username, only:[:authenticate]
 
@@ -18,9 +18,7 @@ class Api::UsersController < ApiController
         if @user.save
             render json: @user, status: :created
         else
-            render json: {
-                message: @user.errors
-            }, status: :bad_request
+            render json: show_error(400,@user.errors), status: :bad_request
         end
     end
 
@@ -29,7 +27,7 @@ class Api::UsersController < ApiController
         if authenticator
             render json: payload(authenticator), status: :ok
         else
-            render json: authenticator.errors, status: :unauthorized    
+            render json: show_error(401, "Invalid user/password"), status: :unauthorized    
         end
     end
     
@@ -40,7 +38,14 @@ class Api::UsersController < ApiController
     end
 
     def user_params
-        params.require(:user).permit(:email,:name,:first_last_name,:second_last_name,:birth_date,:password,:password_confirmation,:username)
+        params.require(:user).permit(:email,
+                                     :name,
+                                     :first_last_name,
+                                     :second_last_name,
+                                     :birth_date,
+                                     :password,
+                                     :password_confirmation,
+                                     :username)
     end
 
     def authenticate_params

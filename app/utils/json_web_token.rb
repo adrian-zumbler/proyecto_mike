@@ -4,7 +4,7 @@ class JsonWebToken
         JWT.encode(payload, Rails.application.secrets.secret_key_base)
     end
 
-    def self.decode
+    def self.decode(token)
         begin
             return HashWithIndifferentAccess.new(
                 JWT.decode(token, Rails.application.secrets.secret_key_base)[0]
