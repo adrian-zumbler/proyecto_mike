@@ -4,9 +4,6 @@ class ApiController < ApplicationController
 
     attr_reader :current_user
     
-      protected
-      
-
     protected
 
     def show_error(status = 400, detail= "Bad request")
@@ -27,16 +24,16 @@ class ApiController < ApplicationController
 
     def http_token
         @http_token ||= if request.headers['Authorization'].present?
-          request.headers['Authorization'].split(' ').last
+            request.headers['Authorization'].split(' ').last
         end
     end
   
     def auth_token
-      @auth_token ||= JsonWebToken.decode(http_token)
+        @auth_token ||= JsonWebToken.decode(http_token)
     end
   
     def user_id_in_token?
-      http_token && auth_token && auth_token[:user_id].to_i
+        http_token && auth_token && auth_token[:user_id].to_i
     end
 
 end
