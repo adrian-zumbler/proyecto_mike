@@ -1,6 +1,6 @@
 class UserAuthenticator
 
-    ERROR_AUTHENTICATE = "Invalido usario  y/o passoword"
+    ERROR_AUTHENTICATE = "Invalido usuario  y/o passoword"
     
     def initialize(user)
         @user = user
