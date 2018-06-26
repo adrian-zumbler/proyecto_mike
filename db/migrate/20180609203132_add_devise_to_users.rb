@@ -4,13 +4,22 @@ class AddDeviseToUsers < ActiveRecord::Migration
   def change
     create_table :users do |t|
       ## Database authenticatable
-      t.string :email,              null: false, default: ""
+      t.integer :user_type_id
+      t.integer :status_id
+
+      t.string :username, unique: true
       t.string :encrypted_password, null: false, default: ""
+
+      t.string :name
+      t.string :first_last_name
+      t.string :second_last_name
+      t.date :birth_date
+      t.string :email,              null: false, default: ""
 
       ## Recoverable
       t.string   :reset_password_token
       t.datetime :reset_password_sent_at
-
+      
       ## Rememberable
       t.datetime :remember_created_at
 
@@ -36,18 +45,16 @@ class AddDeviseToUsers < ActiveRecord::Migration
       # Uncomment below if timestamps were not included in your original model.
       # t.timestamps null: false
       # custom model columns
-      t.string :name
-      t.string :first_last_name
-      t.string :second_last_name
-      t.date :birth_date
     end
 
     add_index :users, :email,                unique: true
     add_index :users, :reset_password_token, unique: true
+    add_foreign_key :users, :user_types
+    add_foreign_key :users, :statuses
+    
     # add_index :users, :confirmation_token,   unique: true
     # add_index :users, :unlock_token,         unique: true
 
-    
     
   end
 

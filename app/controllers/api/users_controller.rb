@@ -67,7 +67,7 @@ class Api::UsersController < ApiController
     def payload(user)
         {
             token: JsonWebToken.encode({user_id: user.id}),
-            user: {id: user.id, email: user.username}
+            user: {id: user.id, user_type: user.user_type, status_id: user.status_id, username: user.username, name: user.name, first_last_name: user.first_last_name, second_last_name: user.second_last_name, email: user.email}
         }
     end
     

@@ -12,12 +12,12 @@ class ApiController < ApplicationController
 
     def authenticate_request!
         unless user_id_in_token?
-            render json: show_error(401,"Invalid accesss"), status: :unauthorized
+            render json: show_error(401,"Invalido accesss"), status: :unauthorized
             return
         end
         @current_user = User.find(auth_token[:user_id])
         rescue JWT::VerificationError, JWT::DecodeError
-            render json: show_error(401,"Invalid accesss"), status: :unauthorized
+            render json: show_error(401,"Invalido accesss"), status: :unauthorized
     end
     
     private
