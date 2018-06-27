@@ -10,7 +10,8 @@ class Api::UsersController < ApiController
     end
 
     def show
-        respond_with @user, status: :ok
+#        respond_with @user, status: :ok
+         render json: retorno(@use), status: :ok
     end
 
     def create
@@ -70,5 +71,10 @@ class Api::UsersController < ApiController
             user: {id: user.id, user_type: user.user_type, status: user.status, username: user.username, name: user.name, first_last_name: user.first_last_name, second_last_name: user.second_last_name, email: user.email}
         }
     end
+
+    def retorno(user)
+        {
+            user: {id: user.id, user_type: user.user_type, status: user.status, username: user.username, name: user.name, first_last_name: user.first_last_name, second_last_name: user.second_last_name, email: user.email}   
+        }
     
 end
