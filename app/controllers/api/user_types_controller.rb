@@ -13,11 +13,6 @@ class Api::User_typesController < ApiController
         respond_with @user_type, status: :ok
     end
 
-    
-    def user_type_params
-        params.require(:user_type).permit(:description)
-    end
-    
     private
 
     def set_user_type
