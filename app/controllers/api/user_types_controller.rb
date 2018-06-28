@@ -1,11 +1,11 @@
-class Api::User_typesController < ApiController
+class Api::UserTypesController < ApiController
 
     before_filter :authenticate_request!
     before_filter :set_user_type, only:[:show,:update,:destroy]
 
 
     def index
-        @user_types = user_type.all
+        @user_types = User_type.all
         respond_with @user_types, status: :ok
     end
 
