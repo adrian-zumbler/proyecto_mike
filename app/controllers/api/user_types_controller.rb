@@ -1,11 +1,11 @@
 class Api::UserTypesController < ApiController
 
     before_filter :authenticate_request!
-    before_filter :set_user_type, only:[:show,:update,:destroy]
+    before_filter :set_user_type, only:[:show]
 
 
     def index
-        @user_types = User_type.all
+        @user_types = UserType.all
         respond_with @user_types, status: :ok
     end
 
@@ -16,6 +16,6 @@ class Api::UserTypesController < ApiController
     private
 
     def set_user_type
-        @user_type = user_type.find(params[:id])
+        @user_type = UserType.find(params[:id])
     end
 end
