@@ -21,7 +21,7 @@ default: &default
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: 5
   user: postgres
-  host: 10.64.64.211
+  host: localhost
 
 development:
   <<: *default
