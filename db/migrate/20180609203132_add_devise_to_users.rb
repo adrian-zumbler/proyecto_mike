@@ -13,7 +13,7 @@ class AddDeviseToUsers < ActiveRecord::Migration
       t.string :name
       t.string :first_last_name
       t.string :second_last_name
-      t.date :birth_date
+      t.datetime :birth_date
       t.string :email,              null: false, default: ""
 
       ## Recoverable
